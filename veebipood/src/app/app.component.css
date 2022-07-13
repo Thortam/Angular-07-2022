@@ -1,0 +1,28 @@
+  
+.kodu {
+    font-weight: bold
+}
+
+.kodu {
+     background-color:rgb(12, 105, 12);
+     color: rgb(169, 167, 167);
+     border: none;
+     border-radius: 13px;
+}
+
+.kodu:hover {
+    height: 23px ;
+    cursor: grabbing;
+}
+
+div {
+    color: blue;
+    font-style: italic;
+    }
+    
+div:hover {
+    height: 24px}
+
+body {
+    background-color: beige;
+}
