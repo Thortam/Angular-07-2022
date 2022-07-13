@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OstukorvComponent } from './ostukorv/ostukorv.component';
+import { AvalehtComponent } from './avaleht/avaleht.component';
+import { PoedComponent } from './poed/poed.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AvalehtComponent,
+    OstukorvComponent,
+    PoedComponent
   ],
   imports: [
     BrowserModule,
