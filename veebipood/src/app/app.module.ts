@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { OstukorvComponent } from './ostukorv/ostukorv.component';
 import { AvalehtComponent } from './avaleht/avaleht.component';
 import { PoedComponent } from './poed/poed.component';
+import { FormsModule } from '@angular/forms';
+import { LisaToodeComponent } from './lisa-toode/lisa-toode.component';
+import { KodulehtComponent } from './koduleht/koduleht.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AvalehtComponent,
     OstukorvComponent,
-    PoedComponent
+    PoedComponent,
+    LisaToodeComponent,
+    KodulehtComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

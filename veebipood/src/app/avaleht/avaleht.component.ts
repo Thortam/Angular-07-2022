@@ -31,6 +31,9 @@ export class AvalehtComponent implements OnInit {
   }
 
   suurendaKogust() {
+    // v[rdusm\rgiga annan uue v]'rtuse
+    // 
+    // 
     this.kogus = this.kogus + 1;
     this.s6num = "Kogus suurendatud!"
   }
