@@ -34,10 +34,14 @@ export class KodulehtComponent implements OnInit {
       ostukorv = JSON.parse(ostukorvLS);
       // 2. ostukorv = ["Coca cola"]
     }
-    // 1
+    // 1. [].push("Coca Cola") ----> ["Coca Cola"];
+    // 2. ["Coca Cola"].push("Fanta") ----> ["Coca Cola", "Fanta"];
     ostukorv.push(toode);
-    // VÕTI
-    localStorage.setItem("ostukorv", ostukorv);
+    // VÕTI "ostukorv"
+    // VÄÄRTUS '["Coca Cola"]'
+    // VÕTI "ostukorv"
+    // VÄÄRTUS '["Coca Cola", "Fanta"]'
+    localStorage.setItem("ostukorv", JSON.stringify(ostukorv));
   }
 
 }

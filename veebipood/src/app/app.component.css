@@ -16,7 +16,7 @@
 }
 
 div {
-    color: blue;
+    color: black;
     font-style: italic;
     }
     
@@ -25,4 +25,13 @@ div:hover {
 
 body {
     background-color: beige;
+    
+}
+
+.pilt {
+    width: 300px;
+}
+
+.pilt:hover {
+    border-radius: 10px;
 }

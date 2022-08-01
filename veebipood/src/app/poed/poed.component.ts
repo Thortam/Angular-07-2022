@@ -10,7 +10,12 @@ export class PoedComponent implements OnInit {
   // 1. faili
   // 2. brauserisse
   // 3. andmebaasi
-  keskused = ['Kristiine','Mustamäe','Ülemiste','Balti jaam'];
+  keskused = [
+    {nimetus:'Kristiine',aeg:'10-23', aadress: "Tulika tänav 12"},
+    {nimetus:'Mustamäe',aeg:'9-22', aadress: "Tammsaare tee 76"},
+    {nimetus:'Ülemiste',aeg:'9-22', aadress: "Lennujaama tee 45"},
+    {nimetus:'Balti jaam',aeg:'10-23', aadress: "Niine 8"}
+  ];
   aadress = "";
   
   constructor() { }
@@ -24,10 +29,10 @@ export class PoedComponent implements OnInit {
   // 3. let eesliidesega, hiljem lihtsalt viitan talle
 
   lisaPood(form: any) {
-    this.keskused.push(form.value.pood);
+    this.keskused.push({nimetus: form.value.pood, aeg: form.value.aeg, aadress: form.value.aadress});
   }
 
-  kustutaPood(keskus: string) {
+  kustutaPood(keskus: any) {
     // let t'hendab uue muutuja tekitamist
     let j2rjekorraNumber = this.keskused.indexOf(keskus);
     this.keskused.splice(j2rjekorraNumber, 1); // splice -> kustutamine. j'rjekorranumber ja mitu t[kki tahan kustutada
@@ -46,7 +51,7 @@ export class PoedComponent implements OnInit {
 
   // parameetri v''rtus tuleb sulgude vahelt ja saadetakse v''rtuseks muutujale [leval
   
-  muudaAadress(keskuseAadress: string) {
+  muudaAadress(keskuseAadress: any) {
     this.aadress = keskuseAadress;
   }
 }

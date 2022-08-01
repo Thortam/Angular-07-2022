@@ -43,5 +43,3 @@ export class AvalehtComponent implements OnInit {
   }
 
 }
-
-

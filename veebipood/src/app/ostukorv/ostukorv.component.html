@@ -1,12 +1,13 @@
+<div *ngIf="ostukorv.length">Ostukorvis on kokku {{ ostukorv.length }} eset</div>
 
+<div *ngFor="let toode of ostukorv" >
+    <span>{{ toode.nimi }} </span> 
+    <span>{{ toode.hind }}</span>
+    <button (click)="lisa(toode)">lisa toode</button>
+    <button (click)="kustuta(toode)">kustuta toode</button>   
+</div>
 
+<div *ngIf="ostukorv.length">{{ ostukorviSumma }}</div>
 
-<!-- KODUS!!!
-ngFor
-
-ja 2 nuppu (click)="lisa(toode)"
-            (click)="kustuta(toode)"
-        
--->
 
 
