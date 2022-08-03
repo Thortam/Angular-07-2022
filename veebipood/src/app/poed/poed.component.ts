@@ -29,7 +29,9 @@ export class PoedComponent implements OnInit {
   // 3. let eesliidesega, hiljem lihtsalt viitan talle
 
   lisaPood(form: any) {
-    this.keskused.push({nimetus: form.value.pood, aeg: form.value.aeg, aadress: form.value.aadress});
+    // this.keskused.push(form.value) <- saaks kasutada KUI htmls on name="pood" asemel name="nimetus" 
+
+      this.keskused.push({nimetus: form.value.pood, aeg: form.value.aeg, aadress: form.value.aadress});
   }
 
   kustutaPood(keskus: any) {
