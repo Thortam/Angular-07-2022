@@ -1,0 +1,10 @@
+<!-- onSubmit() ja {} LISAN .ts faili     !!!formsGroup jaoks lisan app.modulesse ReactiveFormsModule-->
+<form (ngSubmit)="onSubmit()" [formGroup]="muutmiseVorm">
+    <label>Uue toote nimi</label> <br>
+    <input formControlName="nimi" type="text"> <br>
+    <label>Uue toote hind</label> <br>
+    <input formControlName="hind" type="number"> <br>
+    <label>Uue toote aktiivsus</label> <br>
+    <input formControlName="aktiivsus" type="checkbox"> <br>
+    <button>Muuda toodet</button> <br>
+</form>

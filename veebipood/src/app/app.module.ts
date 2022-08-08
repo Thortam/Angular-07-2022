@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { OstukorvComponent } from './ostukorv/ostukorv.component';
 import { AvalehtComponent } from './avaleht/avaleht.component';
 import { PoedComponent } from './poed/poed.component';
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LisaToodeComponent } from './lisa-toode/lisa-toode.component';
 import { KodulehtComponent } from './koduleht/koduleht.component';
 import { YksikToodeComponent } from './yksik-toode/yksik-toode.component';
 import { HaldaTooteidComponent } from './halda-tooteid/halda-tooteid.component';
 import { MeistComponent } from './meist/meist.component';
+import { MuudaToodeComponent } from './muuda-toode/muuda-toode.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,14 @@ import { MeistComponent } from './meist/meist.component';
     KodulehtComponent,
     YksikToodeComponent,
     HaldaTooteidComponent,
-    MeistComponent
+    MeistComponent,
+    MuudaToodeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,6 +15,7 @@
     <div (click)="email(inimene)">{{ inimene.perenimi }}</div>
     <div (click)="email(inimene)">{{ inimene.vanus }}</div>
     <button (click)="kustuta(inimene)">Kustuta</button>
+    
 </div>
 
 <div *ngIf="klikitudEmail !== ''">Selle isiku email on: {{ klikitudEmail }}</div>

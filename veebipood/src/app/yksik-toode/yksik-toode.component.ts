@@ -8,8 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class YksikToodeComponent implements OnInit {
   toode: any; //kuvamaks HTML-s
-  private tooted: any[] = []
-              //saamaks kätte Anhulari standardkoodi (node_modules seest)
+  private tooted: any[] = [];
+              //saamaks kätte Angulari standardkoodi (node_modules seest)
 
   constructor(private route: ActivatedRoute) { }
               // tekitab muutuja URL-i jaoks
@@ -23,7 +23,7 @@ export class YksikToodeComponent implements OnInit {
     }
                                                 // vasak pool võrdub parema poolega
                                                 // "Tesla" === "Tesla"  
-    this.toode = this.tooted.find(element => element.nimi === nimiURL)
+    this.toode = this.tooted.find(element => element.nimi === nimiURL);
   }
 
 }

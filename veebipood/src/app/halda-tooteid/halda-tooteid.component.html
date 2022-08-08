@@ -1,8 +1,9 @@
 
 <div *ngFor="let toode of tooted">
-    <div>{{ toode }}</div>
+    <!-- <div>{{ toode }}</div> -->
     <div>{{ toode.nimi }}</div>
     <div>{{ toode.hind }}</div>
     <button (click)="kustuta(toode)">Kustuta</button>
-    <button (click)="muuda">Muuda</button>
+    <button routerLink="/muuda/{{toode.nimi}}">Muuda</button>
 </div>
+firebase 
